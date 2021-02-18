@@ -1,0 +1,5 @@
+x = float(input('Введите число x: '))
+y = float(input('Введите число y: '))
+dif = (abs(x) - abs(y))
+multi = abs(x * y)
+print(dif / (1 + multi))
