@@ -3,4 +3,4 @@ b = float(input('Введите число b: '))
 summ = a + b
 dif = a - b
 multi = a * b
-print(' Сумммма =', summ, ' Разность =', dif, ' Произведение =', multi)
+print(' Суммммfqwrа =', summ, ' Разность =', dif, ' Произведение =', multi)
