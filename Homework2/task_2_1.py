@@ -4,5 +4,6 @@ while True:
         print('Слово имеет меньше 3 букв')
         a = input('Введите слово, имеющее минимум 3 буквы\n')
     else:
-        print(a[2])
+        b = a[2]
+        print(b)
         break
