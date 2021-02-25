@@ -1,10 +1,16 @@
 a = [1,4,5,7,10]
-while True:
-    a =[a[-1]] + a[:-1]
-    break
-print(a)
+a_new = []
+n = 0
+while n < len(a):
+    a_new.insert(0, a[-n])
+    n += 1
+print(a_new)
+
 
 a = [1,4,5,7,10]
-for i in range(1):
-    a[0:1] = [a.pop(),a[0]]
-print(a)
+a_new = []
+n = 0
+for i in range(len(a)):
+    a_new.insert(0, a[-n])
+    n += 1
+print(a_new)

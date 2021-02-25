@@ -15,8 +15,10 @@ def div(a, b):
 
 
 while True:
+
     a = int(input('Введите число a :\n'))
     b = int(input('Введите число b :\n'))
+
     while True:
         c = input("Введите знак '+','-','/','*' или 'Стоп' для ввода новых чисел или выхода из калькулятора :\n")
         if c == '+':
@@ -29,6 +31,7 @@ while True:
             print(a, '/', b, '=', div(a, b))
         if c == 'Стоп':
             break
+
     d = input("Хотите продолжить:Да/Нет\n")
     if d == "Да":
         continue
