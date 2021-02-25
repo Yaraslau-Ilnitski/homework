@@ -37,10 +37,6 @@
 # print(summ)
 
 
-
-
-
-
 # num = int(input("Введите целое число"))
 # lst = range(num)
 # summ = 0
@@ -68,5 +64,50 @@
 #     return f"Hello, {name}"
 # print(say_hello('Yaraslau'))
 
-def add(x, y):
-    return x + y
+
+# # 5.01
+# from random import randint
+#
+# def matrix(length):
+#     rows = []
+#     for _ in range(length):
+#         tnp = []
+#         for _ in range(length):
+#             tnp.append(randint(0, 10))
+#         rows.append(tnp)
+#
+#     return rows
+#
+# print(matrix(4))
+
+# # 5.02
+# def ma(matrix,divider):
+#     sum = 0
+#     for i in matrix:
+#         for j in i:
+#             if j % divider == 0:
+#                 sum += j
+#     return sum
+#
+# print(ma(matrix(4),3))
+
+# 5.03
+# from random import randint
+#
+# def matrix(length,height):
+#     rows = []
+#     for _ in range(length):
+#         tnp = []
+#         for _ in range(height):
+#             tnp.append(randint(0, 10))
+#         rows.append(tnp)
+#     s = 0
+#     for i in rows:
+#         for j in tnp:
+#             if j % 2 == 0:
+#                 s += j
+#
+#     return rows
+#     return s
+#
+# print(matrix(3,2))
