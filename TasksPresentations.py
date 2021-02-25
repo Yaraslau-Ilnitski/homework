@@ -1,3 +1,6 @@
+3.03
+
+# 3.11
 # a = input().split('@')
 # if len(a) == 2:
 #     if a[1] == "gmail.com":
@@ -7,6 +10,19 @@
 # else:
 #     print("Enter valid mail!")
 
+# 4.01
+#
+# s =[1,2,51,25,5]
+# summ = 0
+# i = 0
+# while i < len(s):
+#     if s[i] > 5:
+#         summ += s[i]
+#     i+=1
+# print(summ)
+
+# 4.03
+#
 # summ = 0
 # while True:
 #     a = input("Введите число\n")
@@ -19,7 +35,10 @@
 #         continue
 #     summ += a
 # print(summ)
-# for x in range(10):
+
+
+
+
 
 
 # num = int(input("Введите целое число"))
@@ -45,6 +64,9 @@
 # N = len(range(A,B+1))
 # print(f"Count is {N}")
 
-def say_hello(name):
-    return f"Hello, {name}"
-print(say_hello('Yaraslau'))
+# def say_hello(name):
+#     return f"Hello, {name}"
+# print(say_hello('Yaraslau'))
+
+def add(x, y):
+    return x + y
