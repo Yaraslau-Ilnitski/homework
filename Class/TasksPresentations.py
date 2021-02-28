@@ -1,84 +1,15 @@
-3.03
 
-# 3.11
-# a = input().split('@')
-# if len(a) == 2:
-#     if a[1] == "gmail.com":
-#         print(a[0])
-#     else:
-#         print(f"{a[1]} is not supported")
-# else:
-#     print("Enter valid mail!")
+from random import randint
 
-# 4.01
-#
-# s =[1,2,51,25,5]
-# summ = 0
-# i = 0
-# while i < len(s):
-#     if s[i] > 5:
-#         summ += s[i]
-#     i+=1
-# print(summ)
-
-# 4.03
-#
-# summ = 0
-# while True:
-#     a = input("Введите число\n")
-#     if not a.isdigit():
-#         if a == 'стоп':
-#             break
-#         continue
-#     a = int(a)
-#     if a % 5 == 0:
-#         continue
-#     summ += a
-# print(summ)
-
-
-# num = int(input("Введите целое число"))
-# lst = range(num)
-# summ = 0
-# i = 0
-# while i < len(lst):
-#     summ += lst[i] ** 3
-#     i += 1
-# print(summ)
-
-# a = 1
-# b = 4
-# summ = 0
-# for i in range(a,b):
-#     summ += i ** 3
-# print(summ)
-
-
-# A, B = 5, 10
-# for i in range(A,B+1):
-#     print(i)
-# N = len(range(A,B+1))
-# print(f"Count is {N}")
-
-# def say_hello(name):
-#     return f"Hello, {name}"
-# print(say_hello('Yaraslau'))
-
-
-# # 5.01
-# from random import randint
-#
-# def matrix(length):
-#     rows = []
-#     for _ in range(length):
-#         tnp = []
-#         for _ in range(length):
-#             tnp.append(randint(0, 10))
-#         rows.append(tnp)
-#
-#     return rows
-#
-# print(matrix(4))
+def matrix(length):
+    rows = []
+    for _ in range(length):
+        tnp = []
+        for _ in range(length):
+            tnp.append(randint(0, 10))
+        rows.append(tnp)
+    return rows
+print(matrix(4))
 
 # # 5.02
 # def ma(matrix,divider):
@@ -111,3 +42,92 @@
 #     return s
 #
 # print(matrix(3,2))
+
+# from random import randint as get_rand
+#
+# def create_matrix(x, y):
+#     rows = []
+#     for _ in range(x):
+#         tmp = []
+#         for _ in range(y):
+#             tmp.append(get_rand(0, 10))
+#         rows.append(tmp)
+#
+#     return rows
+#
+# def create_square_matrix(length):
+#     return create_matrix(length, length)
+#
+# def sum_of_matrix_elements_by_divider(matrix, divider):
+#     sum = 0
+#     for parentList in matrix:
+#         for matrixItem in parentList:
+#             if matrixItem % divider == 0:
+#                 sum += matrixItem
+#     return sum
+#
+# square_matrix = create_square_matrix(2)
+# print(square_matrix)
+# print(sum_of_matrix_elements_by_divider(square_matrix, 3))
+#
+# def count_in_matrix(matrix, to_find):
+#     count = 0
+#     for parentList in matrix:
+#         for matrixItem in parentList:
+#             if matrixItem == to_find:
+#                 count += 1
+#     return count
+#
+# matrix = create_matrix(2, 3)
+# print(matrix)
+# print(count_in_matrix(matrix, 2))
+#
+# matrix = create_matrix(2, 2)
+#
+# def calc_av_sum(matrix):
+#     count = 0
+#     sum = 0
+#     for parentList in matrix:
+#         for matrixItem in parentList:
+#             count += 1
+#             sum += matrixItem
+#     avv = sum / count
+#     return avv
+#
+# average = calc_av_sum(matrix)
+# print(matrix)
+# print(average)
+#
+# def calc_elements(matrix, average):
+#     count = 0
+#     for parentIndex, parentList in enumerate(matrix):
+#         print(f"parentInx: {parentIndex}, parent: {parentList}")
+#         for childIndex, child in enumerate(parentList):
+#             print(f"childInx: {childIndex}, child: {child}")
+#             if child > average and (parentIndex + childIndex) % 2 == 0:
+#                 count += 1
+#     return count
+#
+# print(calc_elements(matrix, average))
+#
+# lst = ['Петрова', 'Сидоров']
+# def print_lastnames(names):
+#     for name in names:
+#         if name[0] == 'П' and name[-1] == 'а':
+#             print(name)
+# # print_lastnames(lst)
+#
+# pupils = [{"name":"User1","physics":5,"history":7}, {"name":"User2","physics":3,"history":2}, {"name":"User2","physics":6,"history":4}]
+# def calc_av_score(users):
+#     for user in users:
+#         av = (user["physics"] + user["history"]) / 2
+#         user["score"] = av
+#
+# calc_av_score(pupils)
+#
+# def print_good_students(students, needScore):
+#     for student in students:
+#         if student["score"] >= float(needScore):
+#             print(f'Good student is: {student["name"]}')
+#
+# print_good_students(pupils, 4)
