@@ -10,12 +10,12 @@ def create_matrix(length):
 
 matrix = create_matrix(2)
 
-def sum_of_elements_by_divider(matrix, divider):
+def founded_elem(matrix,found):
     s = 0
     for parentList in matrix:
         for matrixItem in parentList:
-            if matrixItem % divider == 0:
-                s += matrixItem
+            if matrixItem == found:
+                s += 1
     return s
 print(matrix)
-print(sum_of_elements_by_divider(matrix,3))
+print(founded_elem(matrix,7))

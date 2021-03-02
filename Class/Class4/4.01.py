@@ -5,5 +5,3 @@ for i in range(len(a)):
         s += a[i]
     i += 1
 print(s)
-
-
