@@ -1,6 +1,6 @@
 a = 1
-b = 4
+b = 3
 summ = 0
-for i in range(a,b):
+for i in range(a,b+1):
     summ += i ** 3
 print(summ)

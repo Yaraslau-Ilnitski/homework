@@ -1,5 +1,4 @@
-from datetime import datetime
-time = datetime.now()
+import time
 
 def decorator(func):
     def wrap():

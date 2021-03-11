@@ -6,7 +6,7 @@ def main():
         lines.append(line)
         if not line:
             break
-    print(lines[0])  # недоделали
+    print(lines[0])
     print(lines[2])
     print(lines[::-1])
     file.close()

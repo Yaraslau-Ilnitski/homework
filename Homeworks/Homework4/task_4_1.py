@@ -9,4 +9,3 @@ while i < len(list):
     list[i] = list[i] * -2
     i+=1
 print(list)
-
